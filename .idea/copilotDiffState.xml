@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/example/papb_bab5/QuoteViewModel.kt">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/app/src/main/java/com/example/papb_bab5/QuoteViewModel.kt" />
+              <option name="originalContent" value="package com.example.papb_bab5&#10;&#10;import androidx.lifecycle.ViewModel&#10;import androidx.lifecycle.viewModelScope&#10;import kotlinx.coroutines.flow.MutableStateFlow&#10;import kotlinx.coroutines.flow.StateFlow&#10;import kotlinx.coroutines.launch&#10;&#10;class QuoteViewModel : ViewModel() {&#10;    private val repository = QuoteRepository()&#10;&#10;    private val _quote = MutableStateFlow(&quot;Tap the button to get a quote&quot;)&#10;    val quote: StateFlow&lt;String&gt; get() = _quote&#10;&#10;    fun fetchQuote() {&#10;        viewModelScope.launch {&#10;            _quote.value = &quot;Loading...&quot;&#10;            val result = repository.getRandomQuote()&#10;            _quote.value = result&#10;        }&#10;    }&#10;}&#10;" />
+              <option name="updatedContent" value="package com.example.papb_bab5&#10;&#10;import androidx.lifecycle.ViewModel&#10;import androidx.lifecycle.viewModelScope&#10;import kotlinx.coroutines.flow.MutableStateFlow&#10;import kotlinx.coroutines.flow.StateFlow&#10;import kotlinx.coroutines.launch&#10;&#10;class QuoteViewModel : ViewModel() {&#10;    private val repository = QuoteRepository()&#10;&#10;    private val _quote = MutableStateFlow(&quot;Tap the button to get a quote&quot;)&#10;    val quote: StateFlow&lt;String&gt; get() = _quote&#10;&#10;    fun fetchQuote() {&#10;        viewModelScope.launch {&#10;            _quote.value = &quot;Loading...&quot;&#10;            val result = repository.getRandomQuote()&#10;            _quote.value = result&#10;        }&#10;    }&#10;}&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
